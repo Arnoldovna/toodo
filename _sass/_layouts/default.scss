@@ -1,0 +1,16 @@
+.default {
+
+
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 0 $s-6;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80%;
+        background: $background-grey;
+    }
+}

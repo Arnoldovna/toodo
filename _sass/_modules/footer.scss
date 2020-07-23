@@ -1,0 +1,40 @@
+.footer {
+    background: $black;
+    padding: $s-5;
+
+
+    @include tablet {
+        padding: $s-3;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        align-self: center;
+        margin-bottom: $s-3;
+
+        @include tablet {
+            margin: $s-5;
+        }
+
+        a {
+            font-size: $p-4;
+            font-weight: 400;
+            color: $white;
+            @include transition(color .1s ease);
+        }
+
+        a:hover {
+            color: $cta-hover;
+            @include transition(color .1s ease);
+        }
+    }
+}

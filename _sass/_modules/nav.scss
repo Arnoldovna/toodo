@@ -1,0 +1,76 @@
+.nav {
+    &__menuToggle {
+        @include tablet {
+            display: flex;
+            justify-content: flex-end;
+            width: $container-m;
+            font-size: $p-4;
+            margin-left: $s-16;
+        }
+    }
+
+    &__checkbox {
+        visibility: hidden;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__hamburger {
+        background-position: center;
+        background-image: url(../../assets/images/hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: $s-5;
+        cursor: pointer;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+
+    &__links {
+        z-index: -2;
+        position: absolute;
+
+        @include tablet {
+            z-index: 0;
+            position: relative;
+            width: $m-full;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__download {
+        @include tablet {
+            font-size: $p-5;
+            padding: $s-3 $s-6;
+            background: $black;
+            color: $white;
+            letter-spacing: 7.5%;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: $r-10;
+            @include transition(background-color .1s ease);
+        }
+    }
+
+    &__link {
+        flex: 1;
+        @include transition(color .1s ease);
+    }
+
+    &__link:hover {
+        color: $grey;
+        @include transition(color .1s ease);
+    }
+
+    &__download:hover {
+        background: $cta-hover;
+        @include transition(background-color .1s ease);
+    }
+}

@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $s-8 0;
+}
+
+.background {
+    background: $background-grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80vh;
+}
