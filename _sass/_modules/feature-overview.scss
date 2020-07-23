@@ -43,13 +43,11 @@
         font-size: $p-2;
         margin-bottom: $s-12;
         font-weight: 700;
-
     }
 
     &__feature {
         font-size: $p-3;
         font-weight: 500;
-
     }
 
     &__description {
@@ -64,7 +62,6 @@
         margin-bottom: $s-6;
 
         @include tablet {
-
             margin-bottom: $s-8;
         }
 

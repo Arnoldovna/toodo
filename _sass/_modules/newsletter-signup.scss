@@ -19,7 +19,6 @@
     }
 
     &__container {
-        // max-width: $container-s;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -53,7 +52,6 @@
 
     &__form {
         display: flex;
-
         width: 100%;
 
         @include tablet {
@@ -92,7 +90,6 @@
         @include tablet {
             margin-right: $s-6;
             width: 314px;
-
         }
 
         &::placeholder {
@@ -100,11 +97,9 @@
             font-weight: 200;
             color: #BFBFBF;
 
-
             @include tablet {
                 font-size: $p-3;
             }
         }
-
     }
 }
